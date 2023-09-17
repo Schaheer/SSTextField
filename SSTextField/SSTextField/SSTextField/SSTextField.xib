@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon-Light.otf">
+            <string>BrandonText-Light</string>
+        </array>
+        <array key="Brandon-RegularItalic.otf">
+            <string>BrandonText-RegularItalic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SSTextField" customModule="SSTextField" customModuleProvider="target">
+            <connections>
+                <outlet property="TFBottomLineView" destination="E11-G5-JgR" id="oqh-0I-k1J"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="T4K-Ww-pZt"/>
+                <outlet property="errorLabel" destination="ZRF-g8-aaP" id="wvE-ot-D1W"/>
+                <outlet property="placeholderLabel" destination="wdc-Uc-n9r" id="tHj-n8-vbd"/>
+                <outlet property="textField" destination="8bo-mU-qfU" id="ZmD-5c-TJp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="icG-Qz-irr">
+                    <rect key="frame" x="0.0" y="0.0" width="389" height="90"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="brN-Ar-Y92">
+                            <rect key="frame" x="0.0" y="0.0" width="389" height="52"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nMN-8j-8PK">
+                                    <rect key="frame" x="0.0" y="0.0" width="389" height="51"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8bo-mU-qfU">
+                                            <rect key="frame" x="0.0" y="0.0" width="389" height="51"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="51" id="W6Z-UZ-PFX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E11-G5-JgR">
+                                    <rect key="frame" x="0.0" y="51" width="389" height="1"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="fDo-gk-yFa"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aER-Ae-Mfc">
+                            <rect key="frame" x="0.0" y="60" width="389" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdc-Uc-n9r">
+                                    <rect key="frame" x="0.0" y="0.0" width="186.5" height="30"/>
+                                    <fontDescription key="fontDescription" name="BrandonText-Light" family="Brandon Text" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Message" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRF-g8-aaP">
+                                    <rect key="frame" x="202.5" y="0.0" width="186.5" height="30"/>
+                                    <fontDescription key="fontDescription" name="BrandonText-RegularItalic" family="Brandon Text" pointSize="12"/>
+                                    <color key="textColor" name="PNErrorRed"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="icG-Qz-irr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="CcW-YD-K3c"/>
+                <constraint firstItem="icG-Qz-irr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="O25-IW-bft"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="icG-Qz-irr" secondAttribute="trailing" id="cwi-yo-MxH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="icG-Qz-irr" secondAttribute="bottom" id="eu7-Jd-OcB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="149.59999999999999" y="-179.01049475262371"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="PNErrorRed">
+            <color red="1" green="0.3529999852180481" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
