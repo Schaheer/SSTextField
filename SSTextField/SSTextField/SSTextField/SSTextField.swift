@@ -210,7 +210,6 @@ class SSTextField: UIView {
         if hideError {
             errorLabel.isHidden = true
         } else {
-            textField.becomeFirstResponder()
             errorLabel.isHidden = false
         }
     }

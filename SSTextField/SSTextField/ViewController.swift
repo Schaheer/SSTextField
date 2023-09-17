@@ -28,8 +28,6 @@ class ViewController: UIViewController {
         
         if isNameValid && isEmailValid && isPasswordValid {
             showAlert(with: "Success", message: "Fields are valid", buttonTitle: "Okay")
-        } else {
-            showAlert(with: "Error", message: "Fields are not valid!", buttonTitle: "Try Again")
         }
     }
     
